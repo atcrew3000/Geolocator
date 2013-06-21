@@ -23,9 +23,11 @@ public class MainActivity extends Activity implements OnClickListener, LocationL
 	public static final String MYLOG = "My logs";
 	private LocationManager locMan;
 	private String provider;
-	
-	public static double latitude; //широта
-	public static double longitude; //долгота
+
+    private String gitRules="GitRules!";
+
+	public static double latitude; //пїЅпїЅпїЅпїЅпїЅпїЅ
+	public static double longitude; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +82,7 @@ public class MainActivity extends Activity implements OnClickListener, LocationL
 		case R.id.button2:
 			et1.setText(latitude+"");
 			et2.setText(longitude+"");	
-			Toast.makeText(getApplicationContext(), "Клик", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "пїЅпїЅпїЅпїЅ", Toast.LENGTH_LONG).show();
 			break;
 		}
 	
@@ -90,10 +92,10 @@ public class MainActivity extends Activity implements OnClickListener, LocationL
 		longitude = loc.getLongitude(); 
 	}
 	public void onProviderDisabled(String provider) {
-		Toast.makeText(getApplicationContext(), "GPS is disabled", Toast.LENGTH_LONG).show();//  не работает
+		Toast.makeText(getApplicationContext(), "GPS is disabled", Toast.LENGTH_LONG).show();//  пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	}
 	public void onProviderEnabled(String provider) {
-		Toast.makeText(getApplicationContext(), "GPS works", Toast.LENGTH_LONG).show();  //  работает
+		Toast.makeText(getApplicationContext(), "GPS works", Toast.LENGTH_LONG).show();  //  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	}
 	public void onStatusChanged(String provider, int status, Bundle extras) {
 		
